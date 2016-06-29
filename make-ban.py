@@ -6,7 +6,7 @@ x = int(raw_input())
 y = x
 color = 5
 
-for i in range(100):
+for i in range(1000):
   ban = []
   for j in range(x):
     temp = []

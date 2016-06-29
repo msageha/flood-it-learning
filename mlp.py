@@ -1,22 +1,23 @@
 #coding: utf-8
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from chainer import cuda, Variable, FunctionSet, optimizers
 import chainer.functions  as F
 import sys
 import ipdb
 
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
 
 # 確率的勾配降下法で学習させる際の１回分のバッチサイズ
-batchsize = 50
+batchsize = 100
 # 学習の繰り返し回数
 n_epoch   = 20
 # 中間層の数
-n_units   = 100
+n_units   = 50
 
 ban_arr = []
 ans_arr = []
+s = set()
 for i in range(10):
   filename = "ban5/ans" + str(i) 
   with open(filename) as f:
@@ -55,6 +56,8 @@ for i in range(10):
         if ans[j] == mx:
           mx = j
           break
+      mx = tesu #教師データを手数とするとき
+      s.add(mx)
       ans_arr.append(mx)
       line = f.readline()
 
@@ -73,9 +76,9 @@ N_test = y_test.size #テストサイズ
 # Prepare multi-layer perceptron model
 # 多層パーセプトロンモデルの設定
 # 入力 784次元、出力 10次元
-model = FunctionSet(l1=F.Linear(5*5*5, n_units),
+model = FunctionSet(l1=F.Linear(5*n*n, n_units),
                     l2=F.Linear(n_units, n_units),
-                    l3=F.Linear(n_units, 5))
+                    l3=F.Linear(n_units, 10))
 
 # Neural net architecture
 # ニューラルネットの構造
@@ -161,9 +164,9 @@ for epoch in xrange(1, n_epoch+1):
   l3_W.append(model.l3.W)
 
 # 精度と誤差をグラフ描画
-plt.figure(figsize=(8,6))
-plt.plot(range(len(train_acc)), train_acc)
-plt.plot(range(len(test_acc)), test_acc)
-plt.legend(["train_acc","test_acc"],loc=4)
-plt.title("Accuracy of digit recognition.")
-plt.plot()
+# plt.figure(figsize=(8,6))
+# plt.plot(range(len(train_acc)), train_acc)
+# plt.plot(range(len(test_acc)), test_acc)
+# plt.legend(["train_acc","test_acc"],loc=4)
+# plt.title("Accuracy of digit recognition.")
+# plt.plot()

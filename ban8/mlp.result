@@ -1,0 +1,60 @@
+epoch 1
+train mean loss=1.5529260844, accuracy=0.300374999642
+test  mean loss=1.42066469193, accuracy=0.416000002623
+epoch 2
+train mean loss=1.15979132429, accuracy=0.543374997377
+test  mean loss=1.07230502963, accuracy=0.563000002503
+epoch 3
+train mean loss=0.914665819705, accuracy=0.63437500149
+test  mean loss=0.987482118607, accuracy=0.594999992847
+epoch 4
+train mean loss=0.829789533466, accuracy=0.668375003338
+test  mean loss=0.972309106588, accuracy=0.598000007868
+epoch 5
+train mean loss=0.783498350531, accuracy=0.684250000864
+test  mean loss=0.971004587412, accuracy=0.606000000238
+epoch 6
+train mean loss=0.746234469861, accuracy=0.703750003874
+test  mean loss=0.975935763121, accuracy=0.604000008106
+epoch 7
+train mean loss=0.710754153132, accuracy=0.718375000358
+test  mean loss=0.986131006479, accuracy=0.603000003099
+epoch 8
+train mean loss=0.676114765555, accuracy=0.733749997616
+test  mean loss=1.00106102824, accuracy=0.607000005245
+epoch 9
+train mean loss=0.640321639925, accuracy=0.747999997437
+test  mean loss=1.01763885021, accuracy=0.602000004053
+epoch 10
+train mean loss=0.604310670495, accuracy=0.765749997646
+test  mean loss=1.03924335837, accuracy=0.602999997139
+epoch 11
+train mean loss=0.569961926714, accuracy=0.784499998391
+test  mean loss=1.06967954636, accuracy=0.602000004053
+epoch 12
+train mean loss=0.536603439972, accuracy=0.803374997526
+test  mean loss=1.11245622635, accuracy=0.591999995708
+epoch 13
+train mean loss=0.503207621351, accuracy=0.819249995798
+test  mean loss=1.15469740629, accuracy=0.595000004768
+epoch 14
+train mean loss=0.471213681251, accuracy=0.832999999076
+test  mean loss=1.19766639471, accuracy=0.591000002623
+epoch 15
+train mean loss=0.440348502621, accuracy=0.846125000715
+test  mean loss=1.24486098289, accuracy=0.579999995232
+epoch 16
+train mean loss=0.409622243419, accuracy=0.859874998778
+test  mean loss=1.29514715672, accuracy=0.576000005007
+epoch 17
+train mean loss=0.380067899823, accuracy=0.873624999821
+test  mean loss=1.35597678423, accuracy=0.57499999702
+epoch 18
+train mean loss=0.351317097805, accuracy=0.884624996781
+test  mean loss=1.42963995934, accuracy=0.571999999881
+epoch 19
+train mean loss=0.326708655991, accuracy=0.893874998391
+test  mean loss=1.50893318653, accuracy=0.573999992013
+epoch 20
+train mean loss=0.309645462967, accuracy=0.896499999613
+test  mean loss=1.60668644905, accuracy=0.568000009656
